@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Arnav Soni — Web Developer and Computer Science student at BITS and Scaler. Explore my skills, projects, and get in touch." />
+    <title>Arnav Soni | Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS via Play CDN (development) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="font-inter bg-white text-gray-800">
+
+<!-- ============================================================
+     Navigation Bar
+     ============================================================ -->
+<header class="navbar-wrapper">
+    <nav class="navbar">
+        <!-- Logo -->
+        <a href="#home" class="nav-logo" aria-label="Go to top">
+            <span class="logo-initials">AS</span>
+        </a>
+
+        <!-- Navigation links -->
+        <ul class="nav-links">
+            <li><a href="#home"      class="nav-link">Home</a></li>
+            <li><a href="#about"     class="nav-link">About</a></li>
+            <li><a href="#skills"    class="nav-link">Skills</a></li>
+            <li><a href="#projects"  class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact"   class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Contact CTA -->
+        <a href="mailto:arnavsoni34543@gmail.com" class="nav-cta">
+            Get In Touch
+        </a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- ============================================================
+         Hero Section
+         ============================================================ -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+
+            <!-- Left: text content -->
+            <div class="hero-text">
+                <p class="hero-greeting">HELLO, I AM</p>
+                <h1 class="hero-name">Arnav Soni</h1>
+                <p class="hero-role">Web Developer &amp; CS Student</p>
+                <p class="hero-bio">
+                    A passionate Computer Science student at BITS &amp; Scaler,
+                    exploring web development and software engineering —
+                    one project at a time.
+                </p>
+
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">
+                        <span class="btn-dot"></span>
+                        Let's Connect
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: circular photo + floating card -->
+            <div class="hero-photo-area">
+                <div class="photo-circle">
+                    <img
+                        src="arnav.jpg"
+                        alt="Arnav Soni — Web Developer and CS Student"
+                        class="profile-photo"
+                    />
+                </div>
+
+                <div class="stats-card">
+                    <span class="stats-number">3+</span>
+                    <span class="stats-label">Languages<br/>Currently Learning</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Wave divider -->
+        <div class="hero-wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,80 C360,0 1080,160 1440,60 L1440,120 L0,120 Z" fill="#ffffff"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         About Section
+         ============================================================ -->
+    <section id="about" class="section-wrapper">
+        <div class="section-inner">
+
+            <div class="section-header">
+                <span class="section-tag">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-grid">
+                <!-- Text -->
+                <div class="about-text">
+                    <p>
+                        Hi! I'm <strong>Arnav Soni</strong>, currently pursuing a
+                        <strong>BSc in Computer Science &amp; AI</strong> at
+                        <strong>BITS Pilani</strong>, while also enrolled in
+                        <strong>Scaler Academy</strong> for intensive web development training.
+                    </p>
+                    <p>
+                        I'm drawn to how the web works — from building structured, semantic HTML pages
+                        to styling with CSS and writing logic in Python, Java, and C++.
+                        I love breaking problems apart and figuring out how to fix them.
+                    </p>
+                    <p>
+                        Right now I'm focused on growing my skills in web technologies
+                        and computer science fundamentals so I can build things that matter.
+                    </p>
+
+                    <div class="about-badges">
+                        <span class="badge">📍 India</span>
+                        <span class="badge">🎓 BITS Pilani</span>
+                        <span class="badge">🚀 Scaler</span>
+                        <span class="badge">💻 CS &amp; AI</span>
+                    </div>
+                </div>
+
+                <!-- Quick info cards -->
+                <div class="about-info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">🎓</div>
+                        <div>
+                            <h3 class="info-title">Currently Studying</h3>
+                            <p class="info-detail">BSc Computer Science &amp; AI</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">💡</div>
+                        <div>
+                            <h3 class="info-title">Focused On</h3>
+                            <p class="info-detail">Web Development</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📬</div>
+                        <div>
+                            <h3 class="info-title">Email</h3>
+                            <p class="info-detail">
+                                <a href="mailto:arnavsoni34543@gmail.com" class="info-link">
+                                    arnavsoni34543@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <div>
+                            <h3 class="info-title">Phone</h3>
+                            <p class="info-detail">
+                                <a href="tel:+916352789765" class="info-link">+91 6352 789 765</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         Skills Section
+         ============================================================ -->
+    <section id="skills" class="section-wrapper section-teal">
+        <div class="section-inner">
+
+            <div class="section-header">
+                <span class="section-tag section-tag-light">What I Know</span>
+                <h2 class="section-title section-title-light">My Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Frontend</h3>
+                    <div class="skill-pills">
+                        <div class="skill-pill">
+                            <span class="skill-icon">🌐</span>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-icon">🎨</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Languages</h3>
+                    <div class="skill-pills">
+                        <div class="skill-pill">
+                            <span class="skill-icon">🐍</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-icon">☕</span>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-icon">⚙️</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Currently Learning</h3>
+                    <div class="skill-pills">
+                        <div class="skill-pill skill-pill-learning">
+                            <span class="skill-icon">⚡</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-pill skill-pill-learning">
+                            <span class="skill-icon">🤖</span>
+                            <span>AI / ML</span>
+                        </div>
+                        <div class="skill-pill skill-pill-learning">
+                            <span class="skill-icon">🗄️</span>
+                            <span>Databases</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         Projects Section — placeholder cards, to be filled later
+         ============================================================ -->
+    <section id="projects" class="section-wrapper">
+        <div class="section-inner">
+
+            <div class="section-header">
+                <span class="section-tag">What I've Built</span>
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">
+                    Projects are being added soon — this section is reserved and ready to go!
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Placeholder card 1 -->
+                <div class="project-card">
+                    <div class="project-placeholder-icon">🚧</div>
+                    <h3 class="project-name">Project Title</h3>
+                    <p class="project-desc">
+                        A short description of the project will go here.
+                        Replace this placeholder with your actual project information.
+                    </p>
+                    <div class="project-tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-link-placeholder">[ Add GitHub Link ]</span>
+                        <span class="project-link-placeholder">[ Add Live Demo ]</span>
+                    </div>
+                </div>
+
+                <!-- Placeholder card 2 -->
+                <div class="project-card">
+                    <div class="project-placeholder-icon">🚧</div>
+                    <h3 class="project-name">Project Title</h3>
+                    <p class="project-desc">
+                        A short description of the project will go here.
+                        Replace this placeholder with your actual project information.
+                    </p>
+                    <div class="project-tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-link-placeholder">[ Add GitHub Link ]</span>
+                        <span class="project-link-placeholder">[ Add Live Demo ]</span>
+                    </div>
+                </div>
+
+                <!-- Placeholder card 3 -->
+                <div class="project-card">
+                    <div class="project-placeholder-icon">🚧</div>
+                    <h3 class="project-name">Project Title</h3>
+                    <p class="project-desc">
+                        A short description of the project will go here.
+                        Replace this placeholder with your actual project information.
+                    </p>
+                    <div class="project-tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">HTML</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-link-placeholder">[ Add GitHub Link ]</span>
+                        <span class="project-link-placeholder">[ Add Live Demo ]</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         Education Section
+         ============================================================ -->
+    <section id="education" class="section-wrapper section-soft">
+        <div class="section-inner">
+
+            <div class="section-header">
+                <span class="section-tag">My Background</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+
+            <div class="education-timeline">
+
+                <!-- BITS Pilani -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="edu-header">
+                            <span class="edu-badge">🎓 University</span>
+                            <span class="edu-year">Present</span>
+                        </div>
+                        <h3 class="edu-degree">BSc — Computer Science &amp; Artificial Intelligence</h3>
+                        <p class="edu-school">BITS Pilani</p>
+                        <p class="edu-desc">
+                            Pursuing a rigorous program covering algorithms, data structures,
+                            machine learning, and software engineering principles.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Scaler -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="edu-header">
+                            <span class="edu-badge">🚀 Bootcamp</span>
+                            <span class="edu-year">Present</span>
+                        </div>
+                        <h3 class="edu-degree">Full-Stack Web Development Program</h3>
+                        <p class="edu-school">Scaler Academy</p>
+                        <p class="edu-desc">
+                            Intensive hands-on program covering HTML, CSS, JavaScript,
+                            and modern web technologies through real project-based learning.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         Contact Section
+         ============================================================ -->
+    <section id="contact" class="section-wrapper section-teal">
+        <div class="section-inner">
+
+            <div class="section-header">
+                <span class="section-tag section-tag-light">Say Hello</span>
+                <h2 class="section-title section-title-light">Get In Touch</h2>
+                <p class="section-subtitle section-subtitle-light">
+                    Whether it's a project idea, a question, or just want to connect —
+                    my inbox is always open.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+
+                <a href="mailto:arnavsoni34543@gmail.com" class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3 class="contact-label">Email</h3>
+                    <p class="contact-value">arnavsoni34543@gmail.com</p>
+                </a>
+
+                <a href="tel:+916352789765" class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3 class="contact-label">Phone</h3>
+                    <p class="contact-value">+91 6352 789 765</p>
+                </a>
+
+                <a href="https://github.com/Thomas28-01" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">🐙</div>
+                    <h3 class="contact-label">GitHub</h3>
+                    <p class="contact-value">@Thomas28-01</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/arnav-soni-32221a39b/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3 class="contact-label">LinkedIn</h3>
+                    <p class="contact-value">arnav-soni</p>
+                </a>
+
+            </div>
+
+            <div class="contact-cta-wrap">
+                <a href="mailto:arnavsoni34543@gmail.com" class="contact-cta-btn">
+                    Send Me a Message →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- ============================================================
+     Footer — includes a contact form + social links
+     ============================================================ -->
+<footer class="site-footer">
+    <div class="footer-body">
+
+        <!-- Left: contact form -->
+        <div class="footer-form-col">
+            <h3 class="footer-form-title">Send Me a Message</h3>
+            <p class="footer-form-sub">Fill in the form and it will open in your email app.</p>
+
+            <!-- mailto action — opens the visitor's email client, no backend needed -->
+            <form
+                class="footer-form"
+                action="mailto:arnavsoni34543@gmail.com"
+                method="POST"
+                enctype="text/plain"
+            >
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-name" class="form-label">Your Name</label>
+                        <input
+                            type="text"
+                            id="contact-name"
+                            name="Name"
+                            class="form-input"
+                            placeholder="John Doe"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="form-label">Your Email</label>
+                        <input
+                            type="email"
+                            id="contact-email"
+                            name="Email"
+                            class="form-input"
+                            placeholder="john@example.com"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-subject" class="form-label">Subject</label>
+                    <input
+                        type="text"
+                        id="contact-subject"
+                        name="Subject"
+                        class="form-input"
+                        placeholder="What's this about?"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message" class="form-label">Message</label>
+                    <textarea
+                        id="contact-message"
+                        name="Message"
+                        class="form-textarea"
+                        rows="4"
+                        placeholder="Hi Arnav, I'd love to connect..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="form-submit-btn">
+                    Send Message →
+                </button>
+            </form>
+        </div>
+
+        <!-- Right: name, links, quick info -->
+        <div class="footer-info-col">
+            <p class="footer-name">Arnav Soni</p>
+            <p class="footer-tagline">Web Developer &amp; CS Student</p>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="#home"      class="footer-nav-link">Home</a>
+                <a href="#about"     class="footer-nav-link">About</a>
+                <a href="#skills"    class="footer-nav-link">Skills</a>
+                <a href="#projects"  class="footer-nav-link">Projects</a>
+                <a href="#education" class="footer-nav-link">Education</a>
+                <a href="#contact"   class="footer-nav-link">Contact</a>
+            </nav>
+
+            <div class="footer-socials">
+                <a href="https://github.com/Thomas28-01" target="_blank" rel="noopener noreferrer" class="social-pill">🐙 GitHub</a>
+                <a href="https://www.linkedin.com/in/arnav-soni-32221a39b/" target="_blank" rel="noopener noreferrer" class="social-pill">💼 LinkedIn</a>
+                <a href="mailto:arnavsoni34543@gmail.com" class="social-pill">✉️ Email</a>
+                <a href="tel:+916352789765" class="social-pill">📱 Phone</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom copyright bar -->
+    <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Arnav Soni · Built with HTML, Tailwind &amp; CSS ❤️</p>
+    </div>
+</footer>
+
+</body>
+</html>
